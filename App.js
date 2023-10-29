@@ -10,6 +10,7 @@ import {
 
 import Signin from './src/screens/Signin';
 import Onboarding from './src/screens/Onboarding';
+import Home from './src/screens/Home';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,6 +21,7 @@ const App = () => {
     <Stack.Navigator screenOptions={{header:()=>null}}>
       <Stack.Screen name="Onboarding" component={Onboarding} />
       <Stack.Screen name="Signin" component={Signin} />
+      <Stack.Screen name="Home" component={Home} />
     </Stack.Navigator>
   </NavigationContainer>
 
